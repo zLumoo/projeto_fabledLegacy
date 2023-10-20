@@ -89,3 +89,12 @@ main > article > section.logs {
 .logs > div > ul{
     padding-top: 10px;
 }
+
+footer{
+    background-color: black;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 0px;
+    padding: 1px;
+}

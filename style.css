@@ -16,7 +16,7 @@ body {
     padding: 0;
     font-family: var(--font1);
     color: white;
-    font-size: 2vw;
+    font-size: 26px;
     background-color: rgb(20, 20, 20);
 }
 
@@ -27,7 +27,7 @@ img {
 
 article {
     max-width: 800px;
-    min-width: 500px;
+    min-width: 320px;
     display: block;
     margin: auto;
     background-color: rgb(20, 20, 20);
@@ -37,11 +37,14 @@ main > article > section.tela {
     position: relative;
     border-radius: 4px;
     padding: 0;
+    padding-bottom: 59%;
     margin: 20px 0px 0px 0px;
 }
 iframe{
     position: absolute;
     left: 50%;
+    width: 90%;
+    height: 90%;
     transform: translate(-50%, 0%);
     background-color: rgb(0, 0, 0);
     border: 3px solid rgba(121, 121, 255, 0.116);
@@ -55,7 +58,6 @@ main > article > section.texto {
 }
 
 main > article > section.website {
-    margin-top: 380px;
     text-align: center;
 }
 
@@ -66,9 +68,10 @@ main > article > section.logs {
     display: block;
     background-color: rgb(116, 116, 116);
     padding: 15px;
-    margin: 80px;
+    margin: 4%;
     border-radius: 10px;
 }
+
 .logs_titulo {
     font-family: var(--font2);
     font-weight: 100;
@@ -79,6 +82,7 @@ main > article > section.logs {
     margin: -15px;
     border-radius: 8px 8px 0px 0px;
 }
+
 .logs > div > ul{
     padding-top: 10px;
 }

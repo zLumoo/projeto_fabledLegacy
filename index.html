@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FL update releases</title>
+    <link rel="shortcut icon" href="imagens/favicon.fl.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article>
+            <section class="texto">Update releases in
+                <div id="temporizador"></div>
+            </section>
+            <section class="tela">
+                    <iframe width="616" height="346.5" src="https://www.youtube.com/embed/Bm0vfhdAJ2Y?si=shwEH4fJZS2GFm1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <section class="website">
+                <a target="_blank" href="https://discord.gg/fabledlegacy"><img src="imagens/logo_discord.png" alt="discord"></a>
+                <a target="_blank" href="https://www.youtube.com/@FabledLegacy"><img src="imagens/logo_youtube.png" alt="youtube"></a>
+            </section>
+            <section class="logs">
+                <div class="logs_titulo">Update logs 6.0</div>
+                <div>
+                    <ul type="square">
+                        <li>New dungeon </li>
+                        <li>New cosmetics</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="logs">
+                <div class="logs_titulo">Update logs 5.8</div>
+                <div>
+                    <ul type="square">
+                        <li>Ended Crustacean Invasion Event</li>
+                        <li>You can no longer access the Crustacean Event Dungeon</li>
+                        <li>You can no longer drop shells from dungeons</li>
+                        <li>Added Post-Event Store for Shells</li>
+                        <li>Includes one armor, one weapon, one enchant, one title and 500 gems</li>
+                        <li>You need to own the entire first store to be able to buy the gems</li>
+                        <li>Added Halloween 2023 Event</li>
+                        <li>Access store from the 'Halloween' zone in the lobby</li>
+                        <li>Complete dungeons in "Halloween" mode to get Pumpkins from defeating Enemies</li>
+                        <li>Fight the 'Bringer of Misery' boss for extra loot, pumpkins & cosmetics</li>
+                        <li>One exclusive armor set and weapon that drops from the boss</li>
+                        <li>The boss will spawn at the end of each dungeon</li>
+                        <li>Access the boss by hitting "Retry" after completing a dungeon completed in halloween mode</li>
+                        <li>Removed gem cosmetic store from a month ago and added new gem store</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script>
+        // Defina a data e hora de término
+        var dataTermino = new Date("2023-10-21T15:59:59").getTime();
+    
+        // Atualize o temporizador a cada segundo
+        var x = setInterval(function() {
+    
+            // Obtém a data e hora atual
+            var dataAtual = new Date().getTime();
+    
+            // Calcula a diferença entre a data de término e a data atual
+            var diferenca = dataTermino - dataAtual;
+    
+            // Calcula dias, horas, minutos e segundos
+            var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+    
+            // Exibe o temporizador
+            document.getElementById("temporizador").innerHTML = dias + "d " + horas + "h "
+            + minutos + "m " + segundos + "s ";
+    
+            // Se a contagem regressiva terminar, exibe uma mensagem
+            if (diferenca < 0) {
+                clearInterval(x);
+                document.getElementById("temporizador").innerHTML = "UPDATE NOW";
+            }
+        }, 1000);
+    </script>
+    
+</body>
+</html>

@@ -65,32 +65,25 @@
         <p>Fan site, created by @zLumoo</p>
     </footer>
     <script>
-        // Defina a data e hora de término
         var dataTermino = new Date("2023-10-22T09:59:59").getTime();
     
-        // Atualize o temporizador a cada segundo
         var x = setInterval(function() {
     
-            // Obtém a data e hora atual
             var dataAtual = new Date().getTime();
     
-            // Calcula a diferença entre a data de término e a data atual
             var diferenca = dataTermino - dataAtual;
     
-            // Calcula dias, horas, minutos e segundos
             var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
             var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
             var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
     
-            // Exibe o temporizador
             document.getElementById("temporizador").innerHTML = dias + "d " + horas + "h "
             + minutos + "m " + segundos + "s ";
     
-            // Se a contagem regressiva terminar, exibe uma mensagem
             if (diferenca < 0) {
                 clearInterval(x);
-                document.getElementById("temporizador").innerHTML = "UPDATE NOW";
+                document.getElementById("temporizador").innerHTML = "UPDATE RELEASED";
             }
         }, 1000);
     </script>

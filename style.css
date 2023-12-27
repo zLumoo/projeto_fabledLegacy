@@ -9,8 +9,11 @@
 :root {
     --font1: 'DM Sans'; 
     --font2: 'Roboto';
-    --color1: rgb(116, 116, 116);
-    --color2: rgb(2, 0, 22);
+    --color1: rgb(162, 145, 200); /* logs */
+    --color2: rgb(125, 104, 145); /* logs title */
+    --color3: rgb(246, 192, 224); /* background color */
+    --color4: black; /* footer */
+    --color5: rgb(125, 104, 145); /* iframe boorder*/
 }
 
 body {
@@ -19,7 +22,7 @@ body {
     font-family: var(--font1);
     color: white;
     font-size: 26px;
-    background-color: rgb(20, 20, 20);
+    background-color: var(--color3);
 }
 
 img {
@@ -43,7 +46,7 @@ main > article > section.tela {
 }
 iframe{
     position: absolute;
-    border: 3px solid rgb(2, 0, 22);
+    border: 3px solid var(--color5);
     width: 90%;
     height: 90%;
     /*Centralizar*/
@@ -79,7 +82,7 @@ main > article > section.logs {
     font-family: var(--font2);
     font-weight: 100;
     font-size: 26px;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 3px rgb(99, 74, 122);;
     background-color: var(--color2);
     padding: 15px;
     margin: -15px;
@@ -91,7 +94,7 @@ main > article > section.logs {
 }
 
 footer{
-    background-color: black;
+    background-color: var(--color4);
     font-size: 18px;
     text-align: center;
     margin-top: 40px;

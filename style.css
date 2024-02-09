@@ -9,11 +9,11 @@
 :root {
     --font1: 'DM Sans'; 
     --font2: 'Roboto';
-    --color1: rgb(162, 145, 200); /* logs */
-    --color2: rgb(125, 104, 145); /* logs title */
-    --color3: rgb(246, 192, 224); /* background color */
+    --color1: #257646; /* logs */
+    --color2: #004004; /* logs title */
+    --color3: #2A854F; /* background color */
     --color4: black; /* footer */
-    --color5: rgb(125, 104, 145); /* iframe boorder*/
+    --color5: black; /* iframe boorder*/
 }
 
 body {

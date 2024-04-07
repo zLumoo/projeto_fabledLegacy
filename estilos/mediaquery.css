@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (max-width:768px){
+    body {
+        font-size: 24px;
+    }
+
+    main > article > section.logs {
+        font-size: 16px;
+    }
+
+    .logs_titulo {
+        font-size: 20px;
+    }
+
+    span#burguer{
+        margin: 0px 10px 0px 10px;
+    }
+    
+    main > article > section#hamburguer > .logs {
+        font-size: 16px;
+    }
+
+    footer{
+        background-color: var(--color4);
+        font-size: 14px;
+    }
+}

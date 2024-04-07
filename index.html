@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FL update releases</title>
-    <link rel="shortcut icon" href="imagens/favicon.fl.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon_fl.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     
 </head>
 <body>
     <main>
         <article>
-            <section class="texto">Update releases in
-                <div id="temporizador"></div>
-            </section>
-            <section class="tela">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sKfSan-gyYs?si=ab0Z16mjoH7yJ7PJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </section>
             <section class="website">
+                <img id="img_top" src="imagens/the_eye.png" alt="eye">
+            </section>
+            <section class="texto">
+                Update releases in April 20th <br>
+                <span id="color"><strong>Stardust Citadel</strong></span>
+            </section>
+
+            <section class="tela">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-T4xvgcXgHM?si=hz0sriFxpWvuU9nr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section class="website">
+                <a target="_blank" href="https://www.roblox.com/games/11872917490/Fabled-Legacy"> <img src="imagens/logo_roblox.png" alt="roblox"></a>
                 <a target="_blank" href="https://discord.gg/fabledlegacy"><img src="imagens/logo_discord.png" alt="discord"></a>
                 <a target="_blank" href="https://www.youtube.com/@FabledLegacy"><img src="imagens/logo_youtube.png" alt="youtube"></a>
             </section>
+
             <section class="logs">
                 <div class="logs_titulo">Update logs 7.0</div>
                 <div>
@@ -29,68 +38,75 @@
                     </ul>
                 </div>
             </section>
-
-            <section class="logs">
-                <div class="logs_titulo">Update logs 6.1</div>
-                <div>
-                    <ul type="square">
-                        <li>Daily Rewards now reward items from Thundering Peaks </li>
-                        <li>AFK Rewards now reward items from Thundering Peaks </li>
-                        <li>Added Halloween mode to Thundering Peaks</li>
-                        <li>Added Tier 5 Elemental Raids </li>
+            
+            <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
+                    menu
+                </span>
+                
+            <section id="hamburguer">
+                <section class="logs">
+                    <div class="logs_titulo">Update logs 6.1</div>
+                    <div>
                         <ul type="square">
-                            <li>Added Tier 5 Rings </li>
-                            <li>Added Tier 5 Success Scrolls to Thundering Peaks Chaos </li>
-                        </ul>
-                        <li>New Gem Cosmetic Store</li>
-                        <li>New Loading Screen </li>
-                        <li>Improved Teleport Fail Handling</li>
-                        <li>New 'Energy Inversion' Guardian spell from Thundering Peaks - Expert/Chaos</li>
-                        <li>Added a 'Taunted' indicator to enemies that are taunted</li>
-                        <li>Made it so that the blue tile attack at the dual bosses happens sooner</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="logs">
-                <div class="logs_titulo">Update logs 6.0</div>
-                <div>
-                    <ul type="square">
-                        <li>&#x1F329; New Dungeon Thundering Peaks</li>
-                        <li>Removed Crustacean Invasion Stores</li>
-                        <li>Removed Celebration Event</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="logs">
-                <div class="logs_titulo">Update logs 5.8</div>
-                <div>
-                    <ul type="square">
-                        <li>Ended Crustacean Invasion Event</li>
-                        <ul type="square">
-                            <li>You can no longer access the Crustacean Event Dungeon</li>
-                            <li>You can no longer drop shells from dungeons</li>
-                            <li>Added Post-Event Store for Shells</li>
+                            <li>Daily Rewards now reward items from Thundering Peaks </li>
+                            <li>AFK Rewards now reward items from Thundering Peaks </li>
+                            <li>Added Halloween mode to Thundering Peaks</li>
+                            <li>Added Tier 5 Elemental Raids </li>
                             <ul type="square">
-                                <li>Includes one armor, one weapon, one enchant, one title and 500 gems</li>
-                                <li>You need to own the entire first store to be able to buy the gems</li>
+                                <li>Added Tier 5 Rings </li>
+                                <li>Added Tier 5 Success Scrolls to Thundering Peaks Chaos </li>
                             </ul>
+                            <li>New Gem Cosmetic Store</li>
+                            <li>New Loading Screen </li>
+                            <li>Improved Teleport Fail Handling</li>
+                            <li>New 'Energy Inversion' Guardian spell from Thundering Peaks - Expert/Chaos</li>
+                            <li>Added a 'Taunted' indicator to enemies that are taunted</li>
+                            <li>Made it so that the blue tile attack at the dual bosses happens sooner</li>
                         </ul>
-                        <li>Added Halloween 2023 Event</li>
+                    </div>
+                </section>
+
+                
+
+                <section class="logs">
+                    <div class="logs_titulo">Update logs 6.0</div>
+                    <div>
                         <ul type="square">
-                            <li>Access store from the 'Halloween' zone in the lobby</li>
-                            <li>Complete dungeons in "Halloween" mode to get Pumpkins from defeating Enemies</li>
-                            <li>Fight the 'Bringer of Misery' boss for extra loot, pumpkins & cosmetics</li>
-                            <ul type="square">
-                                <li>One exclusive armor set and weapon that drops from the boss</li>
-                                <li>The boss will spawn at the end of each dungeon</li>
-                                <li>Access the boss by hitting "Retry" after completing a dungeon completed in halloween mode</li>
-                            </ul>
+                            <li>&#x1F329; New Dungeon Thundering Peaks</li>
+                            <li>Removed Crustacean Invasion Stores</li>
+                            <li>Removed Celebration Event</li>
                         </ul>
-                        <li>Removed gem cosmetic store from a month ago and added new gem store</li>
-                    </ul>
-                </div>
+                    </div>
+                </section>
+                <section class="logs">
+                    <div class="logs_titulo">Update logs 5.8</div>
+                    <div>
+                        <ul type="square">
+                            <li>Ended Crustacean Invasion Event</li>
+                            <ul type="square">
+                                <li>You can no longer access the Crustacean Event Dungeon</li>
+                                <li>You can no longer drop shells from dungeons</li>
+                                <li>Added Post-Event Store for Shells</li>
+                                <ul type="square">
+                                    <li>Includes one armor, one weapon, one enchant, one title and 500 gems</li>
+                                    <li>You need to own the entire first store to be able to buy the gems</li>
+                                </ul>
+                            </ul>
+                            <li>Added Halloween 2023 Event</li>
+                            <ul type="square">
+                                <li>Access store from the 'Halloween' zone in the lobby</li>
+                                <li>Complete dungeons in "Halloween" mode to get Pumpkins from defeating Enemies</li>
+                                <li>Fight the 'Bringer of Misery' boss for extra loot, pumpkins & cosmetics</li>
+                                <ul type="square">
+                                    <li>One exclusive armor set and weapon that drops from the boss</li>
+                                    <li>The boss will spawn at the end of each dungeon</li>
+                                    <li>Access the boss by hitting "Retry" after completing a dungeon completed in halloween mode</li>
+                                </ul>
+                            </ul>
+                            <li>Removed gem cosmetic store from a month ago and added new gem store</li>
+                        </ul>
+                    </div>
+                </section>
             </section>
         </article>
     </main>
@@ -98,6 +114,15 @@
         <p>Fan site, created by @zLumoo</p>
     </footer>
     
-    <script src="code.js"></script>
+    <script>
+        function clickMenu() {
+            var hamburguer = document.getElementById('hamburguer');
+            if (hamburguer.style.display === 'block') {
+                hamburguer.style.display = 'none';
+            } else {
+                hamburguer.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>

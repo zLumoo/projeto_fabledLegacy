@@ -9,11 +9,22 @@
 :root {
     --font1: 'DM Sans'; 
     --font2: 'Roboto';
-    --color1: #257646; /* logs */
-    --color2: #004004; /* logs title */
-    --color3: #2A854F; /* background color */
+    --color1: #6a2db08b; /* logs */
+    --color2: #3F1D72; /* logs title */
+    --color3: #5660c6; /* background color */
     --color4: black; /* footer */
     --color5: black; /* iframe boorder*/
+    --color6: #d90a7f; /* text title color*/
+}
+@keyframes fadeInDown { /*Animação do eye*/
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 body {
@@ -44,6 +55,18 @@ main > article > section.tela {
     padding-bottom: 59%;
     margin: 20px 0px 0px 0px;
 }
+
+main > article > section.website > #img_top {
+    margin-top: 10px;
+    margin-bottom: -40px;
+    text-align: center;
+    width: 250px;
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.8)); /* Ajuste os valores conforme necessário */
+    /* Animação */
+    opacity: 0;
+    animation: fadeInDown 1.5s forwards;
+}
+
 iframe{
     position: absolute;
     border: 3px solid var(--color5);
@@ -53,6 +76,7 @@ iframe{
     left: 50%;
     transform: translate(-50%, 0%);
 }
+
 main > article > section.texto {
     margin-top: 60px;
     text-align: center;
@@ -61,8 +85,13 @@ main > article > section.texto {
     animation: fade-in 1.8s forwards;
 }
 
+main > article > section.texto > #color {
+    color: var(--color6);
+}
+
 main > article > section.website {
     text-align: center;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)); /* Ajuste os valores conforme necessário */
 }
 
 main > article > section.logs {
@@ -93,6 +122,31 @@ main > article > section.logs {
     padding-top: 10px;
 }
 
+span#burguer{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#hamburguer {
+    display: none;
+}
+
+main > article > section#hamburguer > .logs {
+    font-family: var(--font2);
+    font-weight: 100;
+    font-size: 20px;
+    display: block;
+    background-color: var(--color1);
+    padding: 15px;
+    margin: 4%;
+    margin-top: 60px;
+    border-radius: 10px;
+}
 footer{
     background-color: var(--color4);
     font-size: 18px;

@@ -48,6 +48,14 @@ article {
     margin: auto;
 }
 
+ul{
+    list-style-type: square;
+}
+
+ul > ul{
+    list-style-type: disc;
+}
+
 main > article > section.tela {
     position: relative;
     border-radius: 4px;

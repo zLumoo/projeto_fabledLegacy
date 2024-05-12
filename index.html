@@ -17,7 +17,7 @@
                 <img id="img_top" src="imagens/the_eye.png" alt="eye">
             </section>
             <section class="texto">
-                Update releases in May 04th <br>
+                Update released <br>
                 <span id="color"><strong>Stardust Citadel</strong></span>
             </section>
 
@@ -33,26 +33,77 @@
             </section>
 
             <section class="logs">
-                <div class="logs_titulo">Update logs 8.8</div>
+                <div class="logs_titulo">Update logs 9.1</div>
                     <ul type="square">
-                        <li>New Cosmetic Store</li>
-                        <li>New Cosmetic Store Ui</li>
-                        <li>Rotating Cosmetic Store</li>
-                        <li>New Premium Cosmetics</li>
-                        <li>Judgement Cosmetics added to Premium Crate</li>
-                        <li>Extended Anniversary Event for a week</li>
-                        <li>Easter Event will run until the release of Stardust Citadel</li>
-                        <ul type="square">
-                            <li>2x Carrots for the next 7 days</li>
+                        <li>Stardust Citadel Daily Rewards</li>
+                        <li>Stardust Citadel AFK Rewards</li>
+                        <ul>
+                            <li>Only AFK Rewards Farmed after today count</li>
                         </ul>
+                        <li>Stardust Citadel No Hit Mode</li>
+                        <li>New Gem Cosmetic Store</li>
+                        <li>New Premium Cosmetics</li>
+                        <ul>
+                            <li>Previous Premium Cosmetics added to Premium Crate</li>
+                        </ul>
+                        <li>Fixed Gold Bundles for Stardust Citadel</li>
+                        <li>Fixed Attack Range of Starknight</li>
+                        <li>Sell Price and Upgrade Cost are abbreviated</li>
+                        <li>Halved crafting costs of secrets for old dungeons</li>
+                        <li>1.5x Luck for the Weekend</li>
                     </ul>
             </section>
             
             <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
                     menu
                 </span>
-                
+
             <section id="hamburguer">
+                <section class="logs">
+                    <div class="logs_titulo">Update logs 9.0</div>
+                        <ul type="square">
+                            <li>Item Stat Overhaul</li>
+                            <ul>
+                                <li>All dungeon items have had their item stats dropped</li>
+                                <li>Existing items have been converted to the new stat ranges</li>
+                                <li>All dungeons have been rebalanced to account for the damage changes</li>
+                                <li>DPS Skill Points are now a 1% Linear Increase in DMG per Point</li>
+                                <li>Health Skill Points are now a 2.5% Health Increase per Point</li>
+                                <li>Secret Armor Crafting no longer involves any RNG</li>
+                            </ul>
+                            <li>New Dungeon Stardust Citadel</li>
+                            <ul>
+                                <li>Implemented 8th Dungeon Stardust Citadel [ Level 140 - 160 ]</li>
+                                <li>12 New Armor Sets, 16 New Weapons & 8 New Spells</li>
+                            </ul>
+                            <li>Stardust Citadel Achievements Category</li>
+                            <li>A Starry Venture Limited Time Event</li>
+                            <ul>
+                                <li>Collect Stars by defeating Enemies</li>
+                                <li>Spend Stars in the Event UI in the Lobby</li>
+                            </ul>
+                            <li>Ended Anniversary Event</li>
+                            <li>Ended Easter Event</li>
+                        </ul>
+                </section>
+
+                <section class="logs">
+                    <div class="logs_titulo">Update logs 8.8</div>
+                        <ul type="square">
+                            <li>New Cosmetic Store</li>
+                            <li>New Cosmetic Store Ui</li>
+                            <li>Rotating Cosmetic Store</li>
+                            <li>New Premium Cosmetics</li>
+                            <li>Judgement Cosmetics added to Premium Crate</li>
+                            <li>Extended Anniversary Event for a week</li>
+                            <li>Easter Event will run until the release of Stardust Citadel</li>
+                            <ul type="square">
+                                <li>2x Carrots for the next 7 days</li>
+                            </ul>
+                        </ul>
+                </section>
+
+
                 <section class="logs">
                     <div class="logs_titulo">Update logs 8.7</div>
                         <ul type="square">
@@ -181,6 +232,7 @@
     <script>
         function clickMenu() {
             var hamburguer = document.getElementById('hamburguer');
+
             if (hamburguer.style.display === 'block') {
                 hamburguer.style.display = 'none';
             } else {

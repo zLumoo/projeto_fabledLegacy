@@ -1,11 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Roboto:wght@400;500&display=swap');
 
-@keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 :root {
     --font1: 'DM Sans'; 
     --font2: 'Roboto';
@@ -14,9 +9,27 @@
     --color3: #5660c6; /* background color */
     --color4: black; /* footer */
     --color5: black; /* iframe boorder*/
-    --color6: #d90a7f; /* text title color*/
+    --color6: #f01993; /* text title color*/
 }
-@keyframes fadeInDown { /*Animação do eye*/
+
+@keyframes fade-in {
+    from { 
+        opacity: 0; 
+    } to { 
+        opacity: 1; 
+    }
+}
+
+@keyframes translateY {
+    0% {
+        transform: translateY(0);
+    } 
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes fadeInDown {
     0% {
         opacity: 0;
         transform: translateY(-100%);
@@ -24,6 +37,26 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes UpDown { /*Animação do eye*/
+    0% {
+        opacity: 1;
+        transform: translateY(-4%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
@@ -64,7 +97,7 @@ main > article > section.tela {
     margin: 20px 0px 0px 0px;
 }
 
-main > article > section.website > #img_top {
+section.website > #img_top {
     margin-top: 10px;
     margin-bottom: -40px;
     text-align: center;
@@ -72,7 +105,7 @@ main > article > section.website > #img_top {
     filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.8)); /* Ajuste os valores conforme necessário */
     /* Animação */
     opacity: 0;
-    animation: fadeInDown 1.5s forwards;
+    animation: UpDown 1.5s infinite alternate;
 }
 
 iframe{
@@ -97,9 +130,15 @@ main > article > section.texto > #color {
     color: var(--color6);
 }
 
-main > article > section.website {
+section.website {
+    display: flex;
     text-align: center;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)); /* Ajuste os valores conforme necessário */
+    justify-content: center;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+
+section.website a:hover {
+    animation: translateY 2s;
 }
 
 main > article > section.logs {
@@ -142,6 +181,7 @@ span#burguer{
 
 section#hamburguer {
     display: none;
+    animation: fadeIn 1s;
 }
 
 main > article > section#hamburguer > .logs {

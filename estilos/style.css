@@ -4,12 +4,13 @@
 :root {
     --font1: 'DM Sans'; 
     --font2: 'Roboto';
-    --color1: #6a2db08b; /* logs */
-    --color2: #3F1D72; /* logs title */
-    --color3: #5660c6; /* background color */
+    --color1: #f59a13; /* logs */
+    --color2: #f78228; /* logs title */
+    --color3: #ff8d54; /* background color */
+    --color31: #ff6970;
     --color4: black; /* footer */
     --color5: black; /* iframe boorder*/
-    --color6: #f01993; /* text title color*/
+    --color6: #a51e17; /* text title color*/
 }
 
 @keyframes fade-in {
@@ -51,22 +52,13 @@
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
     font-family: var(--font1);
     color: white;
     font-size: 26px;
-    background-color: var(--color3);
+    background-image: linear-gradient(to right bottom, var(--color3), var(--color31));
 }
 
 img {
@@ -172,16 +164,21 @@ main > article > section.logs {
 span#burguer{
     text-align: center;
     display: block;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--color1);
     border: 2px solid var(--color2);
     border-radius: 5px;
     cursor: pointer;
 }
 
+span#burguer:hover{
+    background-color: var(--color2);
+    color: black;
+}
+
 section#hamburguer {
     display: none;
-    animation: fadeIn 1s;
+    animation: fade-in 0.5s ease;
 }
 
 main > article > section#hamburguer > .logs {
@@ -203,4 +200,9 @@ footer{
     margin-top: 40px;
     margin-left: 0px;
     padding: 1px;
+}
+
+footer a {
+    color: rgb(77, 145, 255);
+    text-decoration: none;
 }

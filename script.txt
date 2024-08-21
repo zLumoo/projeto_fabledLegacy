@@ -1,0 +1,30 @@
+script to logs
+
+function convertTextToHtmlList(text) {
+    const lines = text.split('\n');
+    let html = '<ul>';
+
+    lines.forEach(line => {
+        const trimmedLine = line.trim();
+        if (trimmedLine.startsWith('-')) {
+            html += `<li>${trimmedLine.substring(2)}</li>`;
+        } else if (trimmedLine) {
+            html += `<ul><li>${trimmedLine}</li></ul>`;
+        }
+    });
+
+    html += '</ul>';
+    return html;
+}
+
+const text = `- Primordial's Revenge Event
+ - Collect Amber by defeating Enemies & Bosses in any Dungeon
+ - Reach Milestones at 25K, 50K, 75K, 100K Amber Collected for Milestone Cosmetics
+  - Purchased Amber will count towards Milestones
+ - Use Amber to spin for Cosmetic Weapons in the Event Area in the lobby!
+  - The crate also has a 0.05% chance to drop an alternate usable Secret Weapon from Ethereal Farlands
+  - Faster Spin is now quicker, 2s -> 0.3s`;
+
+const htmlList = convertTextToHtmlList(text);
+document.getElementById('output').innerHTML = htmlList;
+

@@ -4,7 +4,7 @@
 :root {
     --font1: 'DM Sans'; 
     --font2: 'Roboto';
-    --color1: #f59a13; /* logs */
+    --color1: #f3a42e; /* logs */
     --color2: #f78228; /* logs title */
     --color3: #ff8d54; /* background color */
     --color31: #ff6970;
@@ -26,7 +26,7 @@
         transform: translateY(0);
     } 
     100% {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 }
 
@@ -58,7 +58,7 @@ body {
     font-family: var(--font1);
     color: white;
     font-size: 26px;
-    background-image: linear-gradient(to right bottom, var(--color3), var(--color31));
+    background-image: linear-gradient(180deg, var(--color3), var(--color31));
 }
 
 img {
@@ -131,6 +131,7 @@ section.website {
 
 section.website a:hover {
     animation: translateY 2s;
+    filter: contrast(85%) drop-shadow(0 0 15px rgba(0, 0, 0, 0.066));
 }
 
 main > article > section.logs {
@@ -176,12 +177,12 @@ span#burguer:hover{
     color: black;
 }
 
-section#hamburguer {
+section.hidden {
     display: none;
     animation: fade-in 0.5s ease;
 }
 
-main > article > section#hamburguer > .logs {
+section.hidden > .logs {
     font-family: var(--font2);
     font-weight: 100;
     font-size: 20px;
@@ -200,9 +201,20 @@ footer{
     margin-top: 40px;
     margin-left: 0px;
     padding: 1px;
+    padding-top: 40px;
 }
 
-footer a {
-    color: rgb(77, 145, 255);
+footer p{
+    margin: 16px 0px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+footer > p > a {
+    color: rgb(68, 161, 255);
     text-decoration: none;
+}
+
+footer > p > a:hover{
+    color: rgb(133, 194, 255);
 }
